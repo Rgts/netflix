@@ -15,10 +15,13 @@ function App() {
             alt="logo-netflix"
           />
         </header>
-        <Section category="A reprendre" />
+        {/* <Section category="Reprendre avec" />
+        <Section category="Comédies" />
+        <Section category="Dessins animés" /> */}
 
-        {/* <Section category="Emissions TV" />
-        <Section category="Comédies" /> */}
+        {data.map((element, index) => {
+          return <Section key={index} category={element.category} />;
+        })}
       </div>
     </>
   );

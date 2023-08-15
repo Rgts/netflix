@@ -7,7 +7,7 @@ const Section = (props) => {
       <div className="flex-container">
         {data
           // renvoie un tableau correspondant à la catégorie cherchée
-          .filter((element) => element.category === "Comédies") // si je remplace "Comédies" par {props.category} ca ne marche pas
+          .filter((element) => element.category === props.category) // si je remplace "Comédies" par {props.category} ca ne marche pas
           // récup le 1 élément du tableau
           .shift()
           // construit un nveau tableau avec du jsx
