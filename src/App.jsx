@@ -18,7 +18,13 @@ function App() {
         <Section category="Dessins animés" /> */}
 
         {data.map((element, index) => {
-          return <Section key={index} category={element.category} />;
+          return (
+            <Section
+              key={index}
+              category={element.category}
+              images={element.images}
+            />
+          );
         })}
       </div>
     </>
